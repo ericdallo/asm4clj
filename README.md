@@ -1,5 +1,7 @@
 # asm4clj
 
+A sample to use ASM from Clojure to generate data from compiled classes.
+
 ## Build
 
 `clj -T:build native-cli`
