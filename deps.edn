@@ -1,2 +1,9 @@
-{:paths ["src" "src-java"]
- :deps {}}
+{:paths ["src" "src-java" "resources"]
+ :deps {}
+ :aliases {:build {:extra-deps {babashka/fs {:mvn/version "0.2.14"}
+                                babashka/process {:mvn/version "0.4.16"}}
+                   :replace-deps {io.github.clojure/tools.build {:tag "v0.9.0" :sha "8c93e0c"}}
+                   :ns-default build}
+           :native {:jvm-opts ["-Dclojure.compiler.direct-linking=true"
+                               "-Dclojure.spec.skip-macros=true"]
+                    :extra-deps {com.github.clj-easy/graal-build-time {:mvn/version "0.1.4"}}}}}

@@ -1,10 +1,11 @@
-(ns asm4clj.core
+(ns asm4clj.main
   (:require
    [clojure.java.io :as io]
    [clojure.pprint :as pprint]
    [clojure.reflect :as reflect])
   (:import
-   [clojure.reflect ClassResolver]))
+   [clojure.reflect ClassResolver])
+  (:gen-class))
 
 (deftype URIClassResolver []
   ClassResolver

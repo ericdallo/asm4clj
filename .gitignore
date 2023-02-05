@@ -4,20 +4,16 @@
 .nrepl-port
 **/.lsp/.cache
 /.clj-kondo/.cache
-/cli/.clj-kondo/
 /out
 target/
 /classes
 /.DS_Store
 /.cpcache
 /node_modules
-/test.clj
 /.calva/output-window
-/clojure-lsp
+/asm4clj
 /*.jar
-clojure-lsp.build_artifacts.txt
-lib/clojure-lsp.integration-test.out
-cli/integration-test/sample-test/clojure-lsp.integration-test.out
+asm4clj.build_artifacts.txt
 
 /.classpath
 /.project
